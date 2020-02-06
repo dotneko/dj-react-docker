@@ -9,7 +9,7 @@ RUN apt-get -y install curl \
 WORKDIR /pinfo/backend
 
 # Install Python dependencies
-COPY ./backend/requirements.txt /app/backend/
+COPY ./backend/requirements.txt /pinfo/backend/
 RUN pip3 install --upgrade pip -r requirements.txt
 
 # Install JS dependencies
